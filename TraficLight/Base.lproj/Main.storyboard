@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sq-Kx-2pb">
-                                <rect key="frame" x="162.66666666666666" y="677" width="89" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <rect key="frame" x="166.66666666666666" y="680" width="81" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="startButtonTaped" destination="BYZ-38-t0r" eventType="touchUpInside" id="cwF-Kl-aOD"/>
@@ -77,6 +77,7 @@
                         <outlet property="greenView" destination="PtH-Na-qtC" id="Lz3-8e-KF0"/>
                         <outlet property="redView" destination="nOU-uH-Cm3" id="cf7-39-ULq"/>
                         <outlet property="startButton" destination="5Sq-Kx-2pb" id="syD-je-61G"/>
+                        <outlet property="trafficLightBodyView" destination="3Wt-Uf-y3I" id="vZu-lg-Qjj"/>
                         <outlet property="yellowView" destination="J5B-Hd-PfZ" id="Tlj-L3-2Ni"/>
                     </connections>
                 </viewController>
