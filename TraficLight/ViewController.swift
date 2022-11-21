@@ -53,8 +53,8 @@ class ViewController: UIViewController {
     @IBAction func startButtonTaped() {
         lightsStatus = [false, false, false] // Reset to status all lights OFF
         startButton.setTitle("Next", for: .normal)
-        activeLightIndex = activeLightIndex == 2 ? 0 : activeLightIndex + 1 // Find consiquent light to turn ON
-        lightsStatus[activeLightIndex] = true
+        activeLightIndex = activeLightIndex == 2 ? 0 : activeLightIndex + 1 // Find next light to turn ON
+        lightsStatus[activeLightIndex] = true // Switch over to the next light
         
         updateLights()
     }
