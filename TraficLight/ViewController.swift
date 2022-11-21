@@ -28,11 +28,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // Initial configuration of trafic light body and colors
-        redView.layer.cornerRadius = 80
+        redView.layer.cornerRadius = redView.frame.width / 2
         redView.layer.borderWidth = 4
-        yellowView.layer.cornerRadius = 80
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
         yellowView.layer.borderWidth = 4
-        greenView.layer.cornerRadius = 80
+        greenView.layer.cornerRadius = greenView.frame.width / 2
         greenView.layer.borderWidth = 4
         
         trafficLightBodyView.layer.cornerRadius = 20
