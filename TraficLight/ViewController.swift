@@ -16,13 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenView: UIView!
     @IBOutlet weak var startButton: UIButton!
     
-    var activeLightIndex = 2                    // To start with Red light
+    private var activeLightIndex = 2                    // To start with Red light
     
-    var lightsStatus = [false, false, false]    // Init status of all lights - OFF
+    private var lightsStatus = [false, false, false]    // Init status of all lights - OFF
     
-    let lightOnAlpha: CGFloat = 1.0             // Brightness of light if ON
+    private let lightOnAlpha: CGFloat = 1.0             // Brightness of light if ON
     
-    let lightOffAlpha: CGFloat = 0.2            // Brightness of light if OFF
+    private let lightOffAlpha: CGFloat = 0.2            // Brightness of light if OFF
     
     override func viewDidLoad() {
         super.viewDidLoad()
