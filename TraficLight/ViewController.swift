@@ -11,9 +11,11 @@ class ViewController: UIViewController {
 
     // MARK: - IB Outlets
     @IBOutlet weak var trafficLightBodyView: UIView!
+    
     @IBOutlet weak var redView: UIView!
     @IBOutlet weak var yellowView: UIView!
     @IBOutlet weak var greenView: UIView!
+    
     @IBOutlet weak var startButton: UIButton!
     
     private var activeLightIndex = 2                    // To start with Red light
@@ -27,14 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Initial configuration of trafic light body and colors
-        redView.layer.cornerRadius = redView.frame.width / 2
-        redView.layer.borderWidth = 4
-        yellowView.layer.cornerRadius = yellowView.frame.width / 2
-        yellowView.layer.borderWidth = 4
-        greenView.layer.cornerRadius = greenView.frame.width / 2
-        greenView.layer.borderWidth = 4
-        
+        // Initial configuration of trafic light body and button
         trafficLightBodyView.layer.cornerRadius = 20
         trafficLightBodyView.layer.borderWidth = 4
         trafficLightBodyView.layer.borderColor = UIColor.black.cgColor
@@ -47,6 +42,16 @@ class ViewController: UIViewController {
         startButton.contentEdgeInsets.right = 15
         
         updateLights()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        // Configuration of view corner radiuses for a current layout
+        redView.layer.cornerRadius = redView.frame.width / 2
+        redView.layer.borderWidth = 4
+        yellowView.layer.cornerRadius = yellowView.frame.width / 2
+        yellowView.layer.borderWidth = 4
+        greenView.layer.cornerRadius = greenView.frame.width / 2
+        greenView.layer.borderWidth = 4
     }
 
     // MARK: - IB Actions
