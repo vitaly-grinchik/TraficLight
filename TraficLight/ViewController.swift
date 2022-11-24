@@ -70,4 +70,3 @@ class ViewController: UIViewController {
         greenView.alpha = lightsStatus[2] ? lightOnAlpha : lightOffAlpha
     }
 }
-
